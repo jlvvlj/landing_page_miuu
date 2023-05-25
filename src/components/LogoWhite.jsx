@@ -1,7 +1,7 @@
-export function Logo(props) {
+export function LogoWhite(props) {
   return (
 
-    <svg  className="h-16 w-18  fill-current text-slate-900" viewBox="0 0 100 100">
+    <svg  className="h-16 w-18  fill-current text-white" viewBox="0 0 100 100">
    
       <g >
         <path  d="M56,28c0-3.9,3.1-7,7-7s7,3.1,7,7v26.6c0,4.6,3.7,8.4,8.3,8.4c0,0,0.1,0,0.1,0h4.2c4.6,0,8.4-3.7,8.4-8.3

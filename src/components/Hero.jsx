@@ -14,10 +14,10 @@ export function Hero() {
   return (
     <Container className=" bg-slate-900 pb-4 text-center">
       <header
-  class="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
+  className="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
 >
   <div
-    class="relative z-30 p-5 text-2xl text-white rounded-xl"
+    className="relative z-30 p-5 text-2xl text-white rounded-xl"
   >
        <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-100 sm:text-7xl">
         Music{' '}
@@ -31,7 +31,7 @@ export function Hero() {
         </span>{' '}
         made simple.
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-300">
+      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-white font-bold">
       Distribute your music automatically to TikTok, YouTube, Tidal, Spotify, Apple Music, and more. Monitor and share your revenues with other rights holders. 
       </p>
       <div className="mt-10 flex justify-center space-x-6">
