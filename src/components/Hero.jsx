@@ -14,10 +14,10 @@ export function Hero() {
   return (
     <Container className=" bg-slate-900 pb-4 text-center">
       <header
-  class="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
+  className="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
 >
   <div
-    class="relative z-30 p-5 text-2xl text-white rounded-xl"
+    className="relative z-30 p-5 text-2xl text-white rounded-xl"
   >
        <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-100 sm:text-7xl">
         Music{' '}

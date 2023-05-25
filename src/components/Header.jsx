@@ -99,20 +99,18 @@ export function Header() {
   return (
     <header className="">
       <video
-        autoplay="{true}"
+        autoPlay="{true}"
         loop
         muted
-        class="absolute z-10 object-cover"
+        className="absolute z-10 object-cover"
       >
-//15, 16, 20, 21, 24
         <source
           src="./video25.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
       </video>
-      <div class="m-0 p-0">
-
+      <div className="m-0 p-0">
         <nav className="bg-white bg-opacity-10 relative pt-3 z-50 text-sm">
           <ul className="flex items-center mx-5">
             <li>
