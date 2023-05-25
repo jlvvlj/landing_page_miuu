@@ -134,13 +134,18 @@ export function PrimaryFeatures() {
                       </p>
                     </div>
                     <div className="relative mt-10 aspect-[970/898] w-[45rem] overflow-hidden rounded-xl bg-slate-800 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
-                        src={feature.image}
-                        alt=""
-                        layout="fill"
-                        priority
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      />
+                      <video
+                        autoPlay="{true}"
+                        loop
+                        muted
+                        className="absolute z-10 object-cover"
+                      >
+                        <source
+                          src="./video26.mp4"
+                          type="video/mp4"
+                        />
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
                   </Tab.Panel>
                 ))}
