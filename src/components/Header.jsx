@@ -8,7 +8,7 @@ import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 
 function MobileNavigation() {
-  return (
+ /*  return (
     <Popover>
       {({ open, close }) => (
         <>
@@ -58,7 +58,7 @@ function MobileNavigation() {
             >
               <Popover.Panel
                 as="ul"
-                className="absolute inset-x-0 top-full mt-4 origin-top space-y-4 rounded-2xl bg-slate-950 p-6 text-lg tracking-tight text-slate-200 shadow-xl ring-1 ring-slate-900/5"
+                className="absolute inset-x-0 top-full mt-4 origin-top space-y-4 rounded-2xl p-6 text-lg tracking-tight text-red-800 shadow-xl ring-1 ring-slate-900/5"
               >
                 <li>
                   <Link href="#features">
@@ -92,15 +92,29 @@ function MobileNavigation() {
         </>
       )}
     </Popover>
-  )
+  ) */
 }
 
 export function Header() {
   return (
-    <header className="py-10  bg-slate-900">
-      <Container>
-        <nav className="relative z-50 text-sm">
-          <ul className="flex items-center">
+    <header className="">
+      <video
+        autoplay="{true}"
+        loop
+        muted
+        class="absolute z-10 object-cover"
+      >
+//15, 16, 20, 21, 24
+        <source
+          src="./video25.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="m-0 p-0">
+
+        <nav className="bg-white bg-opacity-10 relative pt-3 z-50 text-sm">
+          <ul className="flex items-center mx-5">
             <li>
               <Link href="#">
                 <a>
@@ -111,34 +125,34 @@ export function Header() {
             </li>
             <li className="ml-12 hidden md:block">
               <Link href="#features">
-                <a className="rounded-lg py-1 px-2 text-slate-200 hover:bg-slate-800 hover:text-slate-200">
+                <a className="rounded-lg py-1 px-2 text-lg font-bold text-white hover:bg-slate-800 hover:text-slate-200">
                   Features
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block">
               <Link href="#testimonials">
-                <a className="rounded-lg py-1 px-2 text-slate-200 hover:bg-slate-800 hover:text-slate-200">
+                <a className="rounded-lg py-1 px-2 text-lg font-bold text-white  hover:bg-slate-800 hover:text-slate-200">
                   What artists say
                 </a>
               </Link>
             </li>
             <li className="ml-6 hidden md:block">
               <Link href="#pricing">
-                <a className="rounded-lg py-1 px-2 text-slate-200 hover:bg-slate-800 hover:text-slate-200">
+                <a className="rounded-lg py-1 px-2  text-lg font-bold text-white hover:bg-slate-800 hover:text-slate-200">
                   Music Contracts
                 </a>
               </Link>
             </li>
             <li className="ml-auto hidden md:block">
               <Link href="/login">
-                <a className="rounded-lg py-1 px-2 text-slate-200 hover:bg-slate-800 hover:text-slate-200">
+                <a className="rounded-lg py-1 px-2 text-lg font-bold text-white hover:bg-slate-800 hover:text-slate-200">
                   Sign in
                 </a>
               </Link>
             </li>
             <li className="ml-auto md:ml-8">
-              <ButtonLink href="/register" color="blue">
+              <ButtonLink href="/register" >
                 <span>
                   Get started<span className="hidden lg:inline"> today</span>
                 </span>
@@ -149,7 +163,8 @@ export function Header() {
             </li>
           </ul>
         </nav>
-      </Container>
+
+      </div>
     </header>
   )
 }

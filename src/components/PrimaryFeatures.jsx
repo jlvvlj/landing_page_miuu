@@ -59,18 +59,17 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-labelledby="features-title"
-      className="relative overflow-hidden bg-slate-800 pt-20 pb-28 sm:py-32"
+      className="relative overflow-hidden bg-slate-900 pt-14 pb-14 sm:py-32"
     >
-    
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2
             id="features-title"
-            className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl"
+            className="pb-10 font-display text-8xl tracking-tight font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent animate-text sm:text-3xl md:text-8xl"
           >
             Everything you need for your musical rights.
           </h2>
-          <p className="mt-6 text-lg tracking-tight text-blue-100">
+          <p className="mt-12 text-lg tracking-tight text-blue-100">
             Collaborate, distribute and share your revenues on a single platform.
           </p>
         </div>
@@ -134,7 +133,7 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="relative mt-10 aspect-[1085/730] w-[45rem] overflow-hidden rounded-xl bg-slate-800 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <div className="relative mt-10 aspect-[970/898] w-[45rem] overflow-hidden rounded-xl bg-slate-800 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
                       <Image
                         src={feature.image}
                         alt=""

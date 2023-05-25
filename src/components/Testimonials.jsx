@@ -82,7 +82,7 @@ export function Testimonials() {
         <div className="mx-auto max-w-2xl md:text-center">
           <h2
             id="testimonials-title"
-            className="font-display text-3xl tracking-tight text-slate-200 sm:text-4xl"
+            className="font-display text-8xl tracking-tight font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent animate-text sm:text-3xl md:text-8xl"
           >
             Loved by artists.
           </h2>

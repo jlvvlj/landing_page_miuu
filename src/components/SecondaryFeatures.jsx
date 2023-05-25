@@ -10,10 +10,10 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 const features = [
   {
-    name: 'Feature 1',
-    summary: 'Lorem ipsum dolor sit amet.',
+    name: 'Automatic Revenue Pooling',
+    summary: 'Get your revenues from all streaming platforms in one account.',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit, faucibus mattis est mus scelerisque mass.',
+      'Go to your Dashboard to see all payments and related data.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -44,11 +44,11 @@ const features = [
     },
   },
   {
-    name: 'Feature 2',
+    name: 'Yearly Reports',
     summary:
-      'Lorem ipsum dolor sit amet.',
+      'Track your balance and global revenues',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit, faucibus mattis est mus scelerisque mass.',
+      'Always know what is happening to your global revenue streams.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -72,11 +72,11 @@ const features = [
     },
   },
   {
-    name: 'Feature 3',
+    name: 'Metrics',
     summary:
-      'Lorem ipsum dolor sit amet consectetur',
+      'Get granular data on all the metrics that matter',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipiscing elit, faucibus mattis est mus scelerisque mass',
+      'Explore your streaming numbers, revenue shares and earnings in your Dashboard',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -174,7 +174,7 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
+          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-900 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -219,13 +219,12 @@ export function SecondaryFeatures() {
         <div className="mx-auto max-w-2xl md:text-center">
           <h2
             id="secondary-features-title"
-            className="font-display text-3xl tracking-tight text-slate-200 sm:text-4xl"
+            className="font-display text-8xl tracking-tight font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent animate-text sm:text-3xl md:text-8xl"
           >
-            Simplify everyday business tasks.
+            Simplify your distribution.
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-200">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+            We help you automatise every step of musical distribution from uploading your music to getting your revenues.
           </p>
         </div>
         <FeaturesMobile />

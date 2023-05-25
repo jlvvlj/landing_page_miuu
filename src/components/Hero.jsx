@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+
 import { ButtonLink } from '@/components/Button'
 import { Container } from '@/components/Container'
 import logoLaravel from '@/images/logos/laravel.svg'
@@ -11,14 +12,20 @@ import logoTuple from '@/images/logos/tuple.svg'
 
 export function Hero() {
   return (
-    <Container className="pt-20 bg-slate-900 pb-16 text-center lg:pt-32">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-100 sm:text-7xl">
+    <Container className=" bg-slate-900 pb-4 text-center">
+      <header
+  class="relative flex items-center justify-center h-screen mb-12 overflow-hidden"
+>
+  <div
+    class="relative z-30 p-5 text-2xl text-white rounded-xl"
+  >
+       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-100 sm:text-7xl">
         Music{' '}
-        <span className="relative whitespace-nowrap text-blue-600">
+        <span className="relative whitespace-nowrap">
          
           <span className="relativetext-9xl font-semibold 
             bg-gradient-to-r bg-clip-text  text-transparent 
-            bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%
+            bg-gradient-to-r from-indigo-600 from-10% to-emerald-500 to-90%
             animate-text
             ">revenues</span>
         </span>{' '}
@@ -42,9 +49,12 @@ export function Hero() {
           <span className="ml-3">Watch video</span>
         </ButtonLink>
       </div>
-      <div className="mt-36 lg:mt-44">
-        <p className="font-display text-base text-slate-300">
-          Trusted by
+     
+  </div>
+</header>
+      <div className="mt-4 lg:mt-8">
+        <p className="font-display text-8xl tracking-tight font-bold from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent animate-text sm:text-3xl md:text-5xl">
+         In partnership with
         </p>
         <ul className="mt-8 flex items-center justify-center space-x-8 sm:flex-col sm:space-x-0 sm:space-y-10 xl:flex-row xl:space-y-0 xl:space-x-12">
           <li>
@@ -100,6 +110,7 @@ export function Hero() {
           </li>
         </ul>
       </div>
+  
     </Container>
   )
 }
