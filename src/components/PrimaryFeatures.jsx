@@ -61,7 +61,7 @@ export function PrimaryFeatures() {
       aria-labelledby="features-title"
       className="relative overflow-hidden bg-slate-900 pt-14 pb-14 sm:py-32"
     >
-      <Container className="relative">
+      <div className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2
             id="features-title"
@@ -153,7 +153,7 @@ export function PrimaryFeatures() {
             </>
           )}
         </Tab.Group>
-      </Container>
+      </div>
     </section>
   )
 }
